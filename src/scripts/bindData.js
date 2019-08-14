@@ -3,7 +3,9 @@ import TrashCan from '../img/trash-icon.png'
 //variables ===================================================
 
 const productTable = document.getElementById('product-table-footer');
-const url = 'http://www.mocky.io/v2/5d5452062f0000c127861561';
+const url = require('../input.json');
+
+// var data = require('../../file.json');
 
 
 //event handlers ====================================
@@ -13,19 +15,11 @@ const url = 'http://www.mocky.io/v2/5d5452062f0000c127861561';
 
 //utility funcytions ================================
 
-function FetchTableData(url) {
-    fetch(url)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (json) {
-            let data = json.config;
-            //console.log(data.);
-            data.forEach(element => {
-                bindDataIntoTemplate(element)
-            });
-
-        });
+function FetchTableData(json) {
+    let data = json.config;
+    data.forEach(element => {
+        bindDataIntoTemplate(element)
+    });
 }
 
 function bindDataIntoTemplate(product) {
@@ -38,7 +32,7 @@ function bindDataIntoTemplate(product) {
             <p>£<span class="js-cost-in">${product.price}</span></p>
         </div>
         <div class="col col-qty">
-        <input type="text" value=${product.qty} name="quantity" class="js-input-value">
+        <input type="number" value=${product.qty} name="quantity" min="1" max="10" class="js-input-value">
             <button class="js-plus">+</button>
             <button class="js-minus">-</button>
         </div>
