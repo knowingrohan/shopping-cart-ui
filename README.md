@@ -1,5 +1,5 @@
-# webpack-eslint-sass-prettier
-A custom webpack configuration to demo usage of eslint, sass and prettier using webpack
+# Shopping Cart Ui
+An assignment to implement shopping cart UI
 ## Setting Up :  `npm run install`
 
 ## Build Commands
@@ -7,5 +7,3 @@ A custom webpack configuration to demo usage of eslint, sass and prettier using 
 * dev server : `npm start`
 
 * production build : `npm run build`
-
-* linting - `npm run lint`  && `npm run lint-fix`
