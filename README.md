@@ -1,6 +1,6 @@
 # Shopping Cart Ui
 An assignment to implement shopping cart UI
-## Setting Up :  `npm run install`
+## Setting Up :  `npm install`
 
 ## Build Commands
 
