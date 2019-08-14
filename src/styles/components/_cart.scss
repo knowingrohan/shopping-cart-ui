@@ -1,4 +1,7 @@
 .cart {
     max-width: retr(580);
     margin: retr(48) auto;
+    @include media-query(mobile){
+        padding: retr(16);
+    }
 }

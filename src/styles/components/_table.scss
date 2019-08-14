@@ -22,10 +22,13 @@
 
 .col {
     padding: retr(10) 0;
-    width: 10%;
+    width: 12%;
     overflow: hidden;
     &-pro{
         width: 30%;
+        @include media-query(mobile){
+            width: 20%;
+        }
     }
     &-trash img{
         width: retr(18);
@@ -33,5 +36,6 @@
     }
     input{
         width: retr(48);
+        
     }
 }

@@ -1,5 +1,5 @@
 $breakpoint-lg: "1024px";
-$breakpoint-md: "768px";
+$breakpoint-md: "767px";
 
 //iphone-X break points
 $breakpoint-min-iphonex: 375px;
@@ -10,8 +10,8 @@ $breakpoint-max-iphonex: 812px;
         @media (min-width: $breakpoint-lg) {
             @content;
         }
-    } @else if $point==tabtop {
-        @media (min-width: $breakpoint-md) {
+    } @else if $point==mobile {
+        @media (max-width: $breakpoint-md) {
             @content;
         }
     } @else if $point==tablet {
