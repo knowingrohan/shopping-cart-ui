@@ -1,15 +1,15 @@
 {
-    "name": "post",
+    "name": "shoppingui",
     "version": "1.0.0",
-    "description": "",
+    "description": "Demo of shopping cart Ui",
     "main": "index.js",
     "scripts": {
         "build": "webpack --mode=production",
         "start": "NODE_ENV=development webpack-dev-server --mode=development --hot --open",
-        "lint": "eslint ./src/**/*.js",
-        "lint:fix": "eslint ./src/**/*.js --fix"
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d dist"
     },
-    "author": "",
+    "author": "Rohan Mahajan",
     "license": "ISC",
     "devDependencies": {
         "babel-cli": "^6.26.0",
@@ -46,7 +46,10 @@
         "webpack-md5-hash": "0.0.6"
     },
     "dependencies": {
+        "gh-pages": "^2.1.1",
+        "github-pages": "^3.0.2",
         "html-loader": "^0.5.5",
         "webpack-dev-server": "^3.4.1"
-    }
+    },
+    "homepage": "https://knowingrohan.github.io/shopping-cart-ui"
 }
