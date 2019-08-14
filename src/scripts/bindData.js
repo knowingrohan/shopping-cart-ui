@@ -28,7 +28,7 @@ function bindDataIntoTemplate(product) {
             <p>£<span class="js-cost-final">1.99</span></p>
         </div>
         <div class="col col-trash">
-            <img src=${TrashCan} alt="delete-product" />
+            <img class="js-trash" src=${TrashCan} alt="delete-product" />
         </div>
     </div>`;
 
