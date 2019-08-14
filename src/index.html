@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Infiscale Cart</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
-  <meta name="robots" content="noindex,follow" />
 </head>
 
 <body>
@@ -25,69 +23,11 @@
       <div class="product-table">
         <div class="layout-inline row th">
           <div class="col col-pro">Product</div>
-          <div class="col col-price align-center ">Price</div>
+          <div class="col col-price align-center">Price</div>
           <div class="col col-qty align-center">Qty</div>
           <div class="col">Cost</div>
         </div>
-        <div class="layout-inline row">
-          <div class="col col-pro layout-inline">
-            <p>Cotton T-Shirt, Medium</p>
-          </div>
-          <div class="col col-price col-numeric align-center ">
-            <p>£1.99</p>
-          </div>
-          <div class="col col-qty layout-inline">
-            <input type="number" value=1 name="quantity" min="1" max="10">
-            <button>+</button>
-            <button>-</button>
-          </div>
-          <div class="col col-vat col-numeric">
-            <p>£1.99</p>
-          </div>
-          <div class="col col-trash">
-            <img src="./img/icons-trash.png" alt="delete-product" />
-          </div>
-
-        </div>
-        <div class="layout-inline row row-bg2">
-          <div class="col col-pro layout-inline">
-            <p>Baseball Cap, One Size</p>
-          </div>
-          <div class="col col-price col-numeric align-center ">
-            <p>£2.99</p>
-          </div>
-          <div class="col col-qty  layout-inline">
-            <input type="number" value=2 name="quantity" min="1" max="10">
-            <button>+</button>
-            <button>-</button>
-          </div>
-          <div class="col col-vat col-numeric">
-            <p>£5.98</p>
-          </div>
-          <div class="col col-trash">
-            <img src="./img/icons-trash.png" alt="delete-product" />
-          </div>
-        </div>
-        <div class="layout-inline row">
-          <div class="col col-pro layout-inline">
-            <p>Swim Shorts, Medium</p>
-          </div>
-          <div class="col col-price col-numeric align-center ">
-            <p>£3.99</p>
-          </div>
-          <div class="col col-qty layout-inline">
-            <input type="number" value=1 name="quantity" min="1" max="10">
-            <button>+</button>
-            <button>-</button>
-          </div>
-          <div class="col col-vat col-numeric">
-            <p>£3.99</p>
-          </div>
-          <div class="col col-trash">
-            <img src="./img/icons-trash.png" alt="delete-product" />
-          </div>
-        </div>
-        <div class="tf">
+        <div id="product-table-footer" class="tf ">
           <div class="row layout-inline">
             <div class="col">
               <p>Subtotal</p>
