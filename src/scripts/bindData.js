@@ -1,19 +1,7 @@
 import TrashCan from '../img/trash-icon.png'
 
-//variables ===================================================
-
 const productTable = document.getElementById('product-table-footer');
 const url = require('../input.json');
-
-// var data = require('../../file.json');
-
-
-//event handlers ====================================
-
-
-
-
-//utility funcytions ================================
 
 function FetchTableData(json) {
     let data = json.config;
@@ -46,7 +34,5 @@ function bindDataIntoTemplate(product) {
 
     productTable.insertAdjacentHTML("beforebegin", template);
 }
-
-
 
 FetchTableData(url);
