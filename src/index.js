@@ -1,3 +1,4 @@
 
 import './styles/main.scss';
-import './scripts/main';
+import './scripts/bindData';
+import './scripts/functions';

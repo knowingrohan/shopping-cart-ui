@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Infiscale Cart</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -21,37 +22,41 @@
         Items you have added to your basket are shown below. Adjust the items or remove items before continuing you purchase
       </p>
       <div class="product-table">
-        <div class="layout-inline row th">
+        <div class="row th">
           <div class="col col-pro">Product</div>
           <div class="col col-price align-center">Price</div>
           <div class="col col-qty align-center">Qty</div>
           <div class="col">Cost</div>
+          <div class="col"> &nbsp;</div>
         </div>
         <div id="product-table-footer" class="tf ">
-          <div class="row layout-inline">
-            <div class="col">
+          <div class="row row-footer">
+            <div class="col col-pro">
               <p>Subtotal</p>
             </div>
             <div class="col subtotal">
               <p>£11.96</p>
             </div>
           </div>
-          <div class="row layout-inline">
-            <div class="col">
+          <div class="row row-footer">
+            <div class="col col-pro">
               <p>VAT @ 20%</p>
             </div>
             <div class="col">
               <p>£2.39</p>
             </div>
           </div>
-          <div class="row layout-inline">
-            <div class="col">
+          <div class="row row-footer">
+            <div class="col col-pro">
               <p>Total Cost</p>
             </div>
             <div class="col total-cost">
               <p>£14.35</p>
             </div>
           </div>
+        </div>
+        <div class="row row-buy-now">
+          <button>Buy Now >></button>
         </div>
       </div>
     </main>

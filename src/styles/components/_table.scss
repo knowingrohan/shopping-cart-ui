@@ -1,0 +1,37 @@
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    &.th {
+        border-bottom: 1px solid $black;
+        text-transform: capitalize;
+    }
+    &-footer{
+        justify-content: space-between;
+    }
+    &-buy-now{
+        justify-content: flex-end;
+    }
+    &-buy-now button{
+        background-color: $blue;
+        padding: retr(10) retr(20);
+        border-radius: retr(20);
+        
+    }
+}
+
+.col {
+    padding: retr(10) 0;
+    width: 10%;
+    overflow: hidden;
+    &-pro{
+        width: 30%;
+    }
+    &-trash img{
+        width: retr(18);
+        cursor: pointer;
+    }
+    input{
+        width: retr(48);
+    }
+}

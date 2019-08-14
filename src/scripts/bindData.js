@@ -30,20 +30,20 @@ function FetchTableData(url) {
 
 function bindDataIntoTemplate(product) {
     let template = `
-    <div class="layout-inline row">
-        <div class="col col-pro layout-inline">
-            <p>${product.name}</p>
+    <div class="layout-inline row js-item-row">
+        <div class="col col-pro">
+            <p class="js-item">${product.name}</p>
         </div>
         <div class="col col-price col-numeric align-center ">
-            <p>£${product.price}</p>
+            <p>£<span class="js-cost-in">${product.price}</span></p>
         </div>
-        <div class="col col-qty layout-inline">
-        <input type="number" value=${product.qty} name="quantity" min="1" max="10">
-            <button>+</button>
-            <button>-</button>
+        <div class="col col-qty">
+        <input type="number" value=${product.qty} name="quantity" min="1" max="10" class="js-input-value">
+            <button class="js-plus">+</button>
+            <button class="js-minus">-</button>
         </div>
-        <div class="col col-vat col-numeric">
-            <p>£1.99</p>
+        <div class="col col-net">
+            <p>£<span class="js-cost-final">1.99</span></p>
         </div>
         <div class="col col-trash">
             <img src=${TrashCan} alt="delete-product" />
