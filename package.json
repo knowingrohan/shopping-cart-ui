@@ -51,5 +51,6 @@
         "html-loader": "^0.5.5",
         "webpack-dev-server": "^3.4.1"
     },
-    "homepage": "https://knowingrohan.github.io/shopping-cart-ui"
+    "homepage": "https://knowingrohan.github.io/shopping-cart-ui/"
 }
+
