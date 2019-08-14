@@ -1,3 +1,16 @@
-@import "./variables";
-@import "./mixins";
-@import "./defaults";
+//variables
+@import "./modules/variables";
+
+//mixins
+@import "./mixins/functions";
+@import "./mixins/mediaqueries";
+
+//modules
+@import "./modules/colors";
+@import "./modules/reset";
+@import "./modules/defaults";
+
+//components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/cart";
