@@ -1,4 +1,0 @@
-@function retr($size){
-    $rem: $size/16;
-    @return #{$rem}rem;
-}
