@@ -7,7 +7,7 @@
         "build": "webpack --mode=production",
         "start": "NODE_ENV=development webpack-dev-server --mode=development --hot --open",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d build"
     },
     "author": "Rohan Mahajan",
     "license": "ISC",

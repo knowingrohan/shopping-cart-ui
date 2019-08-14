@@ -7,12 +7,12 @@ const devMode = process.env.NODE_ENV !== 'production';
 module.exports = {
     entry: { main: './src/index.js' },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         filename: '[name].js'
     },
     devtool: 'inline-source-map',
     devServer: {
-        contentBase: './dist',
+        contentBase: './build',
         hot: true,
         open: true,
         watchContentBase: true
@@ -56,7 +56,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin('dist'),
+        new CleanWebpackPlugin('build'),
 
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
@@ -75,7 +75,7 @@ module.exports = {
                 removeComments: true,
                 removeEmptyElements: true
             }
-            // filename: path.resolve(__dirname, 'dist/index.html'),
+            // filename: path.resolve(__dirname, 'build/index.html'),
             // template: path.resolve(__dirname, 'src/index.html'),
         })
     ]
