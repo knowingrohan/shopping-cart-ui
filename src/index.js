@@ -2,11 +2,7 @@
 import './styles/main.scss';
 import './scripts/bindData';
 import './scripts/functions';
-import './scripts/events';
-import './scripts/total';
 import { updateTotals } from './scripts/functions';
-
-
 
 //initial display of figures;
 (() => {
