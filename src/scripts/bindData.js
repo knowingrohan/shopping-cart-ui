@@ -38,7 +38,7 @@ function bindDataIntoTemplate(product) {
             <p>£<span class="js-cost-in">${product.price}</span></p>
         </div>
         <div class="col col-qty">
-        <input type="number" value=${product.qty} name="quantity" min="1" max="10" class="js-input-value">
+        <input type="text" value=${product.qty} name="quantity" class="js-input-value">
             <button class="js-plus">+</button>
             <button class="js-minus">-</button>
         </div>
