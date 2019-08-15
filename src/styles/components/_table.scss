@@ -1,22 +1,34 @@
-
-.row{
+.row {
     display: flex;
     justify-content: space-around;
     &.th {
         border-bottom: 1px solid $black;
         text-transform: capitalize;
     }
-    &-footer{
+    &-footer {
         justify-content: space-between;
+        height: retr(25);
+        align-items: center;
+        height: 1.5625rem;
+        align-items: center;
+        color: #9c9ca0;
+        margin: 0 1rem;
     }
-    &-buy-now{
+    &-buy-now {
         justify-content: flex-end;
+        margin-top: retr(32);
     }
-    &-buy-now button{
+    &-buy-now button {
         background-color: $blue;
         padding: retr(10) retr(20);
         border-radius: retr(20);
-        
+    }
+    &.js-item-row:nth-child(odd) {
+        background-color: $grey;
+    }
+    &-total {
+        margin-top: retr(16);
+        color: $black;
     }
 }
 
@@ -24,18 +36,25 @@
     padding: retr(10) 0;
     width: 12%;
     overflow: hidden;
-    &-pro{
+    &-pro {
         width: 30%;
-        @include media-query(mobile){
+        @include media-query(mobile) {
             width: 20%;
         }
     }
-    &-trash img{
+    &-qty {
+        position: relative;
+    }
+    &-trash img {
         width: retr(18);
         cursor: pointer;
     }
-    input{
+    input {
         width: retr(48);
-        
     }
+    .js-plus, .js-minus{
+        background: grey;
+        border-radius:  0; 
+    }
+    
 }
