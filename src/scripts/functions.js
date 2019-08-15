@@ -32,21 +32,26 @@ const updateTotals = () => {
     console.log(itemsCost);
     let sum = 0;
     [...itemsCost].forEach(item => {
-        sum += (parseFloat(item.innerHTML)).toFixed(2);
+        sum += parseFloat(item.innerHTML);
     });
 
     subTotalText.innerHTML = (parseFloat(sum)).toFixed(2);
     vatText.innerHTML = (parseFloat(sum) * 0.2).toFixed(2);
-    totalText.innerHTML = (parseFloat(sum + sum) * 0.2).toFixed(2);
+    totalText.innerHTML = (parseFloat(subTotalText.innerHTML)+parseFloat(vatText.innerHTML)).toFixed(2);
 }
 const commonFunction = (target,value) => {
-    if(value <11) {
-        addMinus(target,value);
-        updateTotals();
+    if(value < 0) {
+        $(target).parents('.js-item-row').find('.js-input-value').val(0);
+        
     }
     else {
-        $(target).parents('.js-item-row').find('.js-input-value').val(10);
+        if(value >10) {
+            $(target).parents('.js-item-row').find('.js-input-value').val(10);
+        }
     }
+    addMinus(target,$(target).parents('.js-item-row').find('.js-input-value').val());
+    updateTotals();
+    
     
 }
 
@@ -105,7 +110,7 @@ $.ajax({
     },
     error:function(error) {
         console.log('error issue'+error.responseText);
-        console.log('data posted'+ resultData);
+        console.log('data posted'+ finalArray);
     }
 })
 },false);
