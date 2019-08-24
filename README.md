@@ -1,5 +1,6 @@
 # Shopping Cart Ui
-An assignment to implement shopping cart UI. 
+An minimal UI to implement a shopping cart.
+
 **Demo Here :** [https://knowingrohan.github.io/shopping-cart-ui/](https://knowingrohan.github.io/shopping-cart-ui/ "https://knowingrohan.github.io/shopping-cart-ui/")
 ## Setting Up :  
 * `npm install`
